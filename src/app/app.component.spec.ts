@@ -22,10 +22,9 @@ describe('AppComponent', () => {
     expect(app.title).toEqual('test-time');
   });
 
-  it('should render title in a h1 tag', () => {
+  it(`should have time as '19-08-2020'`, () => {
     const fixture = TestBed.createComponent(AppComponent);
-    fixture.detectChanges();
-    const compiled = fixture.debugElement.nativeElement;
-    expect(compiled.querySelector('h1').textContent).toContain('Welcome to test-time!');
+    const app = fixture.debugElement.componentInstance;
+    expect(app.time).toEqual('19-08-2020');
   });
 });
