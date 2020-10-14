@@ -5,7 +5,7 @@
     "types": []
   },
   "files": [
-    "main.bck",
+    "main.ts.bck",
     "polyfills.ts"
   ],
   "include": [
