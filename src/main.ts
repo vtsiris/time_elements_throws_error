@@ -35,7 +35,7 @@ function bootstrap() {
   // window['jasmineRef'] does nothing - it is just a flag
   // if it is not defined - we have clear run
   // if not - lets reload
-  if (window['jasmineRef']) {
+  if (window.jasmineRef) {
     location.reload();
     return;
   } else {
